@@ -1087,6 +1087,10 @@ window.addEventListener("pageshow", function(event) {
         window.location.reload();
     }
 });
+        // Jab page ko focus mile (Mobile Android + PC)
+window.addEventListener("focus", function () {
+    location.reload();
+});
 
 // Jab tab/page wapas visible ho to refresh
 document.addEventListener("visibilitychange", function() {
@@ -1141,3 +1145,4 @@ document.addEventListener("visibilitychange", function() {
 
 
 </html>
+
